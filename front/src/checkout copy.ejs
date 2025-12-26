@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos del pedido</title>
+  <link rel="stylesheet" href="/css/chaeckout.css">
+</head>
+<body>
+
+  <%- include('partials/header') %>
+  
+  <h1>Datos del Pedido</h1>
+
+  <form id="registroForm" action="/registro" method="POST" class="formu">
+    <div class="form-groupR">
+        <label for="apeynomb">Nombre y Apellido:</label>
+        <span>Indicanos al menos tu Nombre!</span>
+        <input type="text" id="apeynomb" name="apeynomb" />
+    </div>
+
+    <div class="form-groupR">
+      <label for="nromesa">Número de Mesa:</label>
+      <span>Por favor ingresa el número de tu mesa así podemos traerte tu pedido</span>
+      <input type="number" id="nromesa" name="nromesa" placeholder="Número Mesa">
+  </div>
+    
+    <!-- <div class="form-groupR telefono-group">
+        <label>Celular:</label>
+        <div class="telefono-inputs">
+            <div class="form-groupR">
+                <span>Ingrese sin el 0</span>
+                <input type="number" id="codigo_area" name="codigo_area" placeholder="Código de área">
+            </div>
+            <div class="form-groupR">
+                <span>Número</span>
+                <input type="number" id="numero" name="numero" placeholder="Número">
+            </div>
+        </div>
+    </div>
+  
+    <div class="form-groupRR">
+        <label for="nombreUsuario">¿Tenés whatsapp?</label>
+        <div class="radio-group">
+            <div class="radio-item">
+                <input class="inputRadio" type="radio" id="siWSP" name="whatsapp" value="si" />
+                <label class="labelRadio" for="siWSP">Si</label>
+            </div>
+        
+            <div class="radio-item">
+                <input class="inputRadio" type="radio" id="noWSP" name="whatsapp" value="no" />
+                <label class="labelRadio" for="noWSP">No</label>
+            </div>
+        </div>
+    </div> -->
+    
+     <div class="form-groupRR">
+        <label for="nombreUsuario">Forma de Pago:</label>
+        <span>Por favor indicanos de que forma queres efectuar el pago de la cuenta</span>
+        <div class="radio-group">
+            <div class="radio-item">
+                <input class="inputRadio" type="radio"  />
+                <label class="labelRadio">Transferencia, Tarjeta</label>
+            </div>
+        
+            <div class="radio-item">
+                <input class="inputRadio"  type="radio" />
+                <label class="labelRadio">Efectivo</label>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div id="laDireccion" class="form-groupR">
+      <label for="apeynomb">Dirección para enviar pedido:</label>
+      <input type="text" id="direccion" name="direccion" />
+    </div> -->
+    
+    <!-- <input type="submit" value="Enviar Pedido" name="registrar" class="btnRegistrar"> -->
+  </form>
+  <section class="botones">
+    <button id="btn-enviar" class="btn-enviar">
+      Enviar Pedido
+    </button>
+    <button id="btn-volver" class="btn-volver">
+      Volver al Pedido
+    </button>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="/scripts/checkout.js"></script>
+</body>
+</html>

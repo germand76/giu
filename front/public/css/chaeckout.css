@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   
+}
+body {
+    margin: 0;
+    background: #f8f8f8;
+    width: 100%;
+}
+
+header {
+    background: #3768b1;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.formu{
+    padding: 13px;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+.form-groupR, .form-groupRR {
+    margin-bottom: 30px;
+}
+
+.form-groupR span{
+    font-family: 'Montserrat'; 
+    font-size: 0.8em;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+label, .labelRadio {
+  font-family: 'Montserrat'; 
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background: #fff; 
+    color: #000;
+    
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+
+  }
+  
+  .radio-item {
+    display: flex;
+
+  }
+  
+  .inputRadio{
+    width: 16px;
+    height: 16px;
+  }
+  
+  .labelRadio{
+    width: 100%;
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los inputs */
+.form-groupR input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #8a8a8a;
+    border-radius: 10px;
+    outline: none;
+}
+
+.telefono-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  .telefono-inputs div:first-child {
+    flex: 1; /* mitad */
+  }
+  
+  /* Los otros dos inputs ocupan el doble */
+  .telefono-inputs div:not(:first-child) {
+    flex: 2;
+  }
+
+.btn-enviar {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}  
+
+.btn-volver{
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    background-color: #a57676;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#laDireccion{
+    display: none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Pedido</title>
+  <link rel="stylesheet" href="/css/pedido.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  
+    <h1>Mi Pedido</h1>
+ 
+
+
+<main class="pedido-container">
+  <section id="pedido-lista"></section>
+
+  <section class="pedido-total">
+    <p>Total</p>
+    <strong id="pedido-total">$0</strong>
+  </section>
+
+  <!-- <br>
+  <a href="/">Elegir más cosas</a> -->
+
+ 
+  <section class="botones">
+    <button id="btn-agregar-mas" class="btn-agregar-mas">
+      Agregar algo más!
+    </button>
+    <button id="btn-checkout" class="btn-confirmar">
+      Confirmar pedido
+    </button>
+  </section>
+</main>
+
+  <script type="module" src="/scripts/pedido.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
